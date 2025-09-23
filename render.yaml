@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: streamlit-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: ~/.venv/bin/streamlit run streamlit_test/app.py
